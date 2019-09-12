@@ -18,7 +18,7 @@
       <div class="middle">
         <div class="image"></div>
         <InputParameter></InputParameter>
-<!--        <div class="footer">尾部</div>-->
+        <div class="footer"></div>
       </div>
     </div>
 
@@ -84,21 +84,23 @@ html, body {
   width: 1000px;
   height: 1500px;
   text-align: center;
-  background: antiquewhite;
+  background: white;
   margin: 0 auto;
+
   .image {
-    height: 100px;
+    height: 10px;
     width: 100%;
-    background: #FF6699;
+    background: #F6F6F6;
+    border: 1px solid #EEEEEE;
   }
 
-
   .footer {
-    background: lightblue;
+    background: #EEEEEE;
     width: 100%;
     height: 100px;
     margin: 0 auto;
     bottom: 1px;
+    border: 1px solid #EEEEEE;
   }
 }
 </style>

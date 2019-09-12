@@ -1,13 +1,13 @@
 <template>
     <div class="all_parameter">
         <div class="input_data">
-            <div class="container">
+            <div class="container" style="margin: 10px">
                 <form method="post">
                     <!--                男-->
                     <div class="male row">
                         <div class="sex_man col-md-2">男生</div>
                         <div class="surname_m col-md-3">
-                            <input type="text" class="" placeholder="姓氏">
+                            <input type="text" class="" placeholder="姓氏" style="border: 1px solid #d0ad9a;">
                             <input type="text" class="" placeholder="名字">
                         </div>
                         <div class="zodiac_m col-md-2">
@@ -92,7 +92,7 @@
                             </select>
                         </div>
                     </div>
-                    <div class="female row">
+                    <div class="female row" style="margin-top: 10px">
                         <div class="sex_women col-md-2">女生</div>
                         <div class="surname_f col-md-3">
                             <input type="text" class="" placeholder="姓氏">
@@ -181,30 +181,68 @@
                         </div>
                     </div>
                     <div class="start_test">
-                        <input name="" type="submit" value="开始测试" style="background: orange;">
+                        <input name="" type="submit" value="开始测试" style="background: orange;margin: 10px">
                     </div>
                 </form>
             </div>
         </div>
         <div class="res col-md-10">
-            <div class="res_header">
-                <h2>配对结果：</h2>
+            <br>
+            <div class="res_header" style="text-align: center">
+                <p style="text-align: center">您的测试结果如下：</p>
+                <p><span style="float: right"><button class="btn btn-warning">打印结果</button></span></p>
             </div>
-            <div class="friendly_score col-md-12">
-                <h3>友情指数：★★★</h3>
+            <br>
+            <div style="text-align: left; margin: 10px; padding-left: 50px">
+                <p>配对双方： 白羊男 VS 白羊女 </p>
             </div>
-            <div class="love_score col-md-12">
-                <h3>爱情指数：★★★★</h3>
-            </div>
-            <div class="marriage_score col-md-12">
-                <h3>婚姻指数：★★★</h3>
-            </div>
-            <div class="family_score col-md-12">
-                <h3>亲情指数：★★★★</h3>
-            </div>
-            <div class="content col-md-12">
-                <h3>详细分析：</h3>
-                <p></p>
+            <br>
+            <p style="font-weight: bold; text-align: left; padding-left: 50px; margin: 10px"> 配对指数： </p>
+            <div class="container">
+                <div class="row">
+                    <div class="friendly_score col-md-5">
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;友情指数：★★★
+                    </div>
+                    <div class="love_score col-md-5">
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;爱情指数：★★★★
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="marriage_score col-md-5">
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;婚姻指数：★★★
+                    </div>
+                    <div class="family_score col-md-5">
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;亲情指数：★★★★
+                    </div>
+                </div>
+                <div class="content col-md-12">
+                    <br>
+                    <br>
+                    <h3>关于爱情：</h3>
+                    <br>
+                    <br>
+                    <p>
+                        两个一模一样的白羊座在一起，必然是爆炸性的组合。 两人会很快被对方相同的行为态度吸引在一起。他们不会转弯抹角，而是直接表达出自己的爱意，马上进入热恋的阶段。不过他们过于相同的思想行为，相处久后会逐渐无法容忍对方的缺点，加上自私和不服输的性格，在没完没了的争吵中，对对方的爱意会变成讨厌甚至仇恨。另外，一旦两个人成为夫妻，一定要在理财计划上好好处理，否则入不敷出。 性生活方面，充满活力的两人配合度相当高。只是太着重性生活而忽略心灵上的沟通也是他们之间的大问题。
+                    </p>
+                    <br>
+                    <br>
+                    <h3>关于亲情：</h3>
+                    <br>
+                    <br>
+                    <p>
+                        亲情上白羊男跟白羊女也是非常的合拍的。不像其他家庭，一个人想要做什么事情，其他人会一直阻碍，或是完全不支持。白羊男跟白羊女在一起就一点这样的问题都没有，每次都是全力支持对方。因为他们太了解彼此了，对方想要做什么事的话，那是十头牛都拉不回来的。既然如此，为什么不给予提供一点支持，让对方可以毫无遗憾呢。
+                    </p>
+                    <br>
+                    <br>
+                    <h3>关于友情: </h3>
+                    <br>
+                    <br>
+                    <p>
+                        友情上白羊男跟白羊女一直都是别人羡慕的那种好哥们，好姐们。虽然两个人关系很好，彼此走得很亲近，但是没有人怀疑过他们的关系，因为他们一直就都是坦坦荡荡的那种。开玩笑也都是当着大家的面，从不会让人尴尬的。所以朋友或许一开始还会怀疑他们是不是有暧昧，但是最后也会十分确定，这两个人就是真的好朋友而已。
+                    </p>
+                    <br>
+
+                </div>
             </div>
         </div>
     </div>
@@ -219,18 +257,24 @@
 <style type="text/css">
 
 .all_parameter {
-    background: #EEEEEE;
+    background: white;
     width: 100%;
     height: auto;
     margin: 0 auto;
+    border: 2px solid #EEEEEE;
+    padding-bottom: 50px;
 }
 .input_data input{
     width: 75px;
     padding: 2px;
+    border: 1px solid #d0ad9a;
+    background: white;
 }
 .input_data select{
     width: 75px;
     padding: 2px;
+    border: 1px solid #d0ad9a;
+    background: white;
 }
 .input_data{
     width: 800px;
@@ -240,59 +284,60 @@
     height: auto;
     margin: 0 auto;
     padding: 20px;
-    background: #EEEEEE;
-    border: 3px solid #D1D1D1;
+    background: #FFF5EC;
+    border: 2px solid #FFCCCC;
 
 }
 .female {
     height: auto;
     margin: 0 auto;
     padding: 20px;
-    background: lightblue;
+    background: #FFF5EC;
+    border: 2px solid #FFCCCC;
 }
 .start_test {
     height: auto;
     margin: 0 auto;
-    background: burlywood;
+    background: white;
 }
 .sex_man{
     width: 60px;
     height: auto;
     text-align: center;
     padding: 5px;
-    background: aliceblue;
+    background: #FFF5EC;
 }
 .sex_women{
     width: 60px;
     height: auto;
     text-align: center;
     padding: 5px;
-    background: aliceblue;
+    background: #FFF5EC;
 }
 .surname_m {
     width: 60px;
     height: auto;
     padding: 5px;
-    background: aquamarine;
+    background: #FFF5EC;
 }
 .zodiac_m {
     width: 60px;
     height: auto;
 
     padding: 5px;
-    background: blanchedalmond;
+    background: #FFF5EC;
 }
 .month_m {
     width: 60px;
     height: auto;
     padding: 5px;
-    background: lightblue;
+    background: #FFF5EC;
 }
 .constellation_m {
     width: 60px;
     height: auto;
     padding: 5px;
-    background: chocolate;
+    background: #FFF5EC;
 }
 
 .sex_women{
@@ -300,46 +345,46 @@
     height: 30px;
     text-align: center;
     padding: 5px;
-    background: aliceblue;
+    background: #FFF5EC;
 }
 .surname_f {
     width: 60px;
     height: auto;
     padding: 5px;
-    background: aquamarine;
+    background: #FFF5EC;
 }
 .zodiac_f {
     width: 60px;
     height: auto;
 
     padding: 5px;
-    background: blanchedalmond;
+    background: #FFF5EC;
 }
 .month_f {
     width: 60px;
     height: auto;
     padding: 5px;
-    background: crimson;
+    background: #FFF5EC;
 }
 .constellation_f {
     width: 60px;
     height: auto;
     padding: 5px;
-    background: chocolate;
+    background: #FFF5EC;
 }
 
 .res {
-    width: 800px;
+    width: 794px;
     margin: 0 auto;
-    background: lavender;
+    background: white;
 }
 .res_header {
     text-align: left;
-    margin: 20px;
+    margin: 10px;
 }
 .friendly_score {
-    text-align: left;
     margin: 10px;
+    text-align: left;
 }
 .love_score {
     text-align: left;
@@ -354,7 +399,7 @@
     margin: 10px;
 }
 .content {
-    text-align: left;
+    text-align: center;
     margin: 10px;
 }
 </style>
